@@ -62,6 +62,7 @@ public class FinalControls extends LinearOpMode {
         frontr.setPower(.6);
 
       } else if (this.gamepad1.right_stick_x<-0.5 && this.gamepad1.a == true){
+        // This is the above command, just at half speed
         frontl.setPower(-0.3);
         frontr.setPower(-0.3);
         leftb.setPower(-0.3);
