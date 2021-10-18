@@ -33,7 +33,6 @@ public class FinalControls extends LinearOpMode {
     leftb = hardwareMap.get(DcMotor.class, "bl");
     rightb = hardwareMap.get(DcMotor.class, "br");
     spin1 = hardwareMap.get(DcMotor.class, "s1");
-    spin2 = hardwareMap.get(DcMotor.class, "s2");
     ds = hardwareMap.get(DcMotor.class, "duck");
 
 
@@ -138,12 +137,10 @@ public class FinalControls extends LinearOpMode {
       }
      if (this.gamepad1.x == true){
         //when x pressed, spinner turns long
-        spin1.setPower(.75);
-        spin2.setPower(.75);
+        spin1.setPower(1);
 
       } else {
         spin1.setPower (0);
-        spin2.setPower (0);
      }
      if (this.gamepad1.b == true){
         //when x pressed, spinner turns long
